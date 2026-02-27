@@ -1,0 +1,31 @@
+pipeline:
+  name: "local_lightweight_etl"
+  log_level: "INFO"
+
+input:
+  path: "data/raw/sample.csv"
+  format: "csv"
+
+processing:
+  rename_columns:
+    deviceId: "device_id"
+    timestamp: "event_ts"
+
+  cast_types:
+    event_ts: "datetime"
+    value: "float"
+
+  drop_nulls:
+    subset: ["device_id", "event_ts"]
+
+  drop_duplicates:
+    subset: ["device_id", "event_ts"]
+
+  filters:
+    - column: "value"
+      operator: ">="
+      value: 0
+
+output:
+  path: "data/processed/final_dataset.csv"
+  format: "csv"
