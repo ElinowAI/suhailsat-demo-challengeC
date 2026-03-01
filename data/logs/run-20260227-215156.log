@@ -1,0 +1,24 @@
+2026-02-27 21:51:56,499 - INFO - Logging initialized
+2026-02-27 21:51:56,500 - INFO - Python version: 3.12.1 (main, Nov 27 2025, 10:47:52) [GCC 13.3.0]
+2026-02-27 21:51:56,500 - INFO - Pandas version: 2.2.2
+2026-02-27 21:51:56,500 - INFO - Starting pipeline: local_lightweight_etl
+2026-02-27 21:51:56,500 - INFO - Input source: data/raw/sample.csv (csv)
+2026-02-27 21:51:56,501 - INFO - Rows loaded: 4
+2026-02-27 21:51:56,502 - INFO - Basic quality check passed
+2026-02-27 21:51:56,502 - INFO - Columns renamed
+2026-02-27 21:51:56,515 - INFO - Types casted
+2026-02-27 21:51:56,516 - INFO - Null values dropped
+2026-02-27 21:51:56,516 - INFO - Duplicates dropped
+2026-02-27 21:51:56,517 - INFO - Filters applied
+2026-02-27 21:51:56,517 - INFO - Rows after processing: 2
+2026-02-27 21:51:56,517 - INFO - Rows removed during processing: 2
+2026-02-27 21:51:56,518 - INFO - Output written to data/processed/final_dataset.csv
+2026-02-27 21:51:56,518 - INFO - Output destination: data/processed/final_dataset.csv (csv)
+2026-02-27 21:51:56,518 - INFO - Pipeline completed successfully
+2026-02-27 21:51:56,518 - INFO - ---- Run Summary ----
+2026-02-27 21:51:56,519 - INFO - Pipeline: local_lightweight_etl
+2026-02-27 21:51:56,519 - INFO - Input rows: 4
+2026-02-27 21:51:56,519 - INFO - Output rows: 2
+2026-02-27 21:51:56,519 - INFO - Execution time: 0.0209 seconds
+2026-02-27 21:51:56,519 - INFO - Log file: data/logs/run-20260227-215156.log
+2026-02-27 21:51:56,519 - INFO - ---------------------
